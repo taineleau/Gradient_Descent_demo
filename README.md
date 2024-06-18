@@ -12,13 +12,32 @@ next you are going to use command line to set up the environment.
 
 ```bash
 conda create -n "ret" python==3.9 -y
+```
+
+if you get any error, try this instead:
+
+```bash
+conda create -n "ret" conda-forge::python==3.9 -y
+```
+
+#### 2. Activate the environment
+
+```bash
 conda activate ret
 ```
 
-#### 2. Install dependency
+#### 3. Install dependency
 
 ```bash
 pip install -r requirements.txt
+```
+
+#### 4. launch the notebook from commandline (not GUI/navigator)
+
+Under this folder, run:
+
+```bash
+jupyter notebook
 ```
 
 

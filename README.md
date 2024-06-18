@@ -20,6 +20,8 @@ if you get any error, try this instead:
 conda create -n "ret" conda-forge::python==3.9 -y
 ```
 
+now you have created an virtual environment named `ret`, we are going to configure the environment while not breaking the default one.
+
 #### 2. Activate the environment
 
 ```bash
@@ -32,6 +34,9 @@ conda activate ret
 pip install -r requirements.txt
 ```
 
+The installation is only required once. Next time if you want to use the same environment, simply run `conda activate ret` before you luanch the notebook.
+
+
 #### 4. launch the notebook from commandline (not GUI/navigator)
 
 Under this folder, run:
@@ -39,6 +44,16 @@ Under this folder, run:
 ```bash
 jupyter notebook
 ```
+
+## Troubleshooting
+
+Still not working?
+
+- Are you under the correct environment? 
+
+If you close your terminal, it would fall back to the default environment. So you need to run `conda activate ret` again if you close and open your terminal.
+
+- Open an issue or contact me!
 
 
 ## Examples
